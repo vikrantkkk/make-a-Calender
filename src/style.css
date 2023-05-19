@@ -1,0 +1,58 @@
+/* Calendar.css */
+
+.calendar {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.dates > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dates > div:hover {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
